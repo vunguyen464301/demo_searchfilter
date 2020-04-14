@@ -1,0 +1,1 @@
+export const mockupAPI= "https://5e93df73c7393c0016de4b8a.mockapi.io/user";
