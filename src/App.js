@@ -50,7 +50,7 @@ class App extends React.Component {
   }
   renderTextChoose = (arr) => {
     return (
-      <div className="row" style={{ position: 'absolute', marginLeft: '10px' }}>
+      <div className="row" style={{  marginLeft: '10px' }}>
         {arr.map(i => this.textChoose(i))}
       </div>
     )
@@ -97,10 +97,12 @@ class App extends React.Component {
     return (
       <div >
         <div style={{ width: '800px', height: '50px' }}>
-          {this.renderTextChoose(listNameCheck)}
+          {/* {this.renderTextChoose(listNameCheck)} */}
+          {this.textChoose({id:1,name:"Bánh tráng"})}
+          {this.textChoose({id:2,name:"Bánh bèo"})}
           <input style={{ width: '100%', height: '100%', paddingLeft: marginLeftInput + "px" }} name='inputName' onChange={this.handleOnChange} />
         </div>
-        {this.renderShowText(obj)}
+        {/* {this.renderShowText(obj)} */}
       </div>
     )
   }
